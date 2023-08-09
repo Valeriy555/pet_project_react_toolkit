@@ -1,0 +1,63 @@
+.Container {
+    width: 99%;
+    padding-left: 5px;
+
+}
+
+.Content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.Content p {
+    width: 11%;
+    margin-left: 8px;
+    word-wrap: break-word;
+    font-size: 14px;
+
+}
+
+.Btn {
+    display: flex;
+    gap: 5px;
+
+}
+
+.Btn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12px;
+    width: 80px;
+    font-size: 10px;
+    padding: 10px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.Btn button:hover {
+    background-color: #c0392b;
+}
+
+.select {
+    white-space: normal;
+    width: 80%;
+    height: 30px;
+    background: #282c34;
+    /*border: 1px solid brown;*/
+    margin-left: 3px;
+    color: #61dafb;
+    appearance: none;
+    font-size: 13px;
+}
+
+.select:focus {
+    outline: none;
+}
+

@@ -1,0 +1,7 @@
+.InspectorsWrap {
+    margin-left: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    height: calc(100vh - 65px);
+}

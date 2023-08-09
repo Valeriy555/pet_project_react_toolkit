@@ -1,0 +1,28 @@
+.FormWrap {
+    background: lightgray;
+    border: 1px solid brown;
+    justify-content: center;
+    padding: 13px;
+    height: 30px;
+}
+
+.input {
+    border: 1px solid brown;
+    margin-left: 3px;
+}
+
+.errorForm {
+    color: red;
+}
+
+.Btn {
+    background: antiquewhite;
+    border: 1px solid brown;
+    margin-left: 3px;
+    cursor: pointer;
+
+}
+
+.select {
+
+}

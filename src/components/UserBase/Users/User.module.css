@@ -1,0 +1,35 @@
+.Inspector {
+    background: tan;
+    border: 1px solid black;
+    margin: 10px;
+    width: 22%;
+    height: 200px;
+    padding-left: 5px;
+}
+
+.Btn {
+    display: flex;
+    gap: 5px;
+
+}
+
+.Btn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12px;
+    width: 80px;
+    font-size: 10px;
+    padding: 10px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.Btn button:hover {
+    background-color: #c0392b;
+}

@@ -1,0 +1,27 @@
+.ContainersWrap {
+
+    justify-content: center;
+    width: 100%;
+
+}
+
+.Header {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 10px;
+    border-bottom: 1px solid blue;
+
+}
+
+.Header p {
+    width: 11%;
+    margin-left: 15px;
+    font-size: 16px;
+    color: blue;
+    gap: 50px;
+}
+
+.Containers {
+    overflow-y: scroll;
+    height: calc(100vh - 120px);
+}
