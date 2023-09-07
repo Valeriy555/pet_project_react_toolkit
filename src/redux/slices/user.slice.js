@@ -11,48 +11,48 @@ const initialState = {
 
 const getAllFromUserSlice = createAsyncThunk( // асинхронный метод
     'userSlice/getAll',
-    async (_, {rejectWithValue,}) => {
+    async (_, thunkAPI) => {
         try {
             const {data} = await userService.getAll();
             return data
         } catch (e) {
-            return rejectWithValue(e.response.data)
+            return thunkAPI.rejectWithValue(e.response.data)
         }
     }
 );
 
 const createInUserSlice = createAsyncThunk(
     'userSlice/create',
-    async ({user}, {rejectWithValue}) => {
+    async ({user}, thunkAPI) => {
         try {
             const {data} = await userService.create(user);
             return data
         } catch (e) {
-            return rejectWithValue(e.response.data)
+            return thunkAPI.rejectWithValue(e.response.data)
         }
     }
 );
 
 const updateInUserSlice = createAsyncThunk(
     'userSlice/updateById',
-    async ({_id, user}, {rejectWithValue}) => {
+    async ({_id, user}, thunkAPI) => {
         try {
             const {data} = await userService.updateById(_id, user);
             return data
         } catch (e) {
-            return rejectWithValue(e.response.data)
+            return thunkAPI.rejectWithValue(e.response.data)
         }
     }
 );
 
 const deleteFromUserSlice = createAsyncThunk(
     'userSlice/deleteById',
-    async ({_id}, {rejectWithValue}) => {
+    async ({_id}, thunkAPI) => {
         try {
             await userService.deleteById(_id);
             return _id
         } catch (e) {
-            return rejectWithValue(e.response.data)
+            return thunkAPI.rejectWithValue(e.response.data)
         }
     }
 );
